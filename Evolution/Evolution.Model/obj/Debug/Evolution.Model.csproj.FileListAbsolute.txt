@@ -1,0 +1,5 @@
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Model\bin\Debug\Evolution.Model.dll
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Model\bin\Debug\Evolution.Model.pdb
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Model\obj\Debug\Evolution.Model.csproj.CoreCompileInputs.cache
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Model\obj\Debug\Evolution.Model.dll
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Model\obj\Debug\Evolution.Model.pdb

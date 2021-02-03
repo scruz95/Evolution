@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EVOLUTIONModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PEDIDO">
+    <Key>
+      <PropertyRef Name="PedID" />
+    </Key>
+    <Property Name="PedID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PedUsu" Type="int" Nullable="false" />
+    <Property Name="PedProd" Type="int" Nullable="false" />
+    <Property Name="PedVrUnit" Type="money" Nullable="false" />
+    <Property Name="PedCant" Type="float" Nullable="false" />
+    <Property Name="PedSubTot" Type="money" Nullable="false" />
+    <Property Name="PedIVA" Type="float" Nullable="false" />
+    <Property Name="PedTotal" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODUCTO">
+    <Key>
+      <PropertyRef Name="ProID" />
+    </Key>
+    <Property Name="ProID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProDesc" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProValor" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="UsuID" />
+    </Key>
+    <Property Name="UsuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UsuNombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UsuPass" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PEDIDO_PRODUCTO">
+    <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="1" />
+    <End Role="PEDIDO" Type="Self.PEDIDO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCTO">
+        <PropertyRef Name="ProID" />
+      </Principal>
+      <Dependent Role="PEDIDO">
+        <PropertyRef Name="PedProd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PEDIDO_USUARIO">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="PEDIDO" Type="Self.PEDIDO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="UsuID" />
+      </Principal>
+      <Dependent Role="PEDIDO">
+        <PropertyRef Name="PedUsu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EVOLUTIONModelStoreContainer">
+    <EntitySet Name="PEDIDO" EntityType="Self.PEDIDO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODUCTO" EntityType="Self.PRODUCTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_PEDIDO_PRODUCTO" Association="Self.FK_PEDIDO_PRODUCTO">
+      <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+      <End Role="PEDIDO" EntitySet="PEDIDO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PEDIDO_USUARIO" Association="Self.FK_PEDIDO_USUARIO">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="PEDIDO" EntitySet="PEDIDO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

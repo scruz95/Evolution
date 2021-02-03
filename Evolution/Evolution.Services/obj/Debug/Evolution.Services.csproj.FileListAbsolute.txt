@@ -1,0 +1,14 @@
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\Evolution.Services.dll.config
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\Evolution.Services.dll
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\Evolution.Services.pdb
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\EntityFramework.dll
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\Evolution.Model.dll
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\Evolution.Model.pdb
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\EntityFramework.xml
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\obj\Debug\Evolution.Services.csprojAssemblyReference.cache
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\obj\Debug\Evolution.Services.csproj.CoreCompileInputs.cache
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\obj\Debug\Evolution.Services.csproj.CopyComplete
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\obj\Debug\Evolution.Services.dll
+C:\Users\orlan\Downloads\Pruebas\Evolution\Evolution\Evolution.Services\obj\Debug\Evolution.Services.pdb

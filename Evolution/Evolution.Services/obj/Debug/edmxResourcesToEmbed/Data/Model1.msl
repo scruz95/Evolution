@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EVOLUTIONModelStoreContainer" CdmEntityContainer="EVOLUTIONEntities">
+    <EntitySetMapping Name="PEDIDO">
+      <EntityTypeMapping TypeName="EVOLUTIONModel.PEDIDO">
+        <MappingFragment StoreEntitySet="PEDIDO">
+          <ScalarProperty Name="PedID" ColumnName="PedID" />
+          <ScalarProperty Name="PedUsu" ColumnName="PedUsu" />
+          <ScalarProperty Name="PedProd" ColumnName="PedProd" />
+          <ScalarProperty Name="PedVrUnit" ColumnName="PedVrUnit" />
+          <ScalarProperty Name="PedCant" ColumnName="PedCant" />
+          <ScalarProperty Name="PedSubTot" ColumnName="PedSubTot" />
+          <ScalarProperty Name="PedIVA" ColumnName="PedIVA" />
+          <ScalarProperty Name="PedTotal" ColumnName="PedTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTO">
+      <EntityTypeMapping TypeName="EVOLUTIONModel.PRODUCTO">
+        <MappingFragment StoreEntitySet="PRODUCTO">
+          <ScalarProperty Name="ProID" ColumnName="ProID" />
+          <ScalarProperty Name="ProDesc" ColumnName="ProDesc" />
+          <ScalarProperty Name="ProValor" ColumnName="ProValor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="EVOLUTIONModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="UsuID" ColumnName="UsuID" />
+          <ScalarProperty Name="UsuNombre" ColumnName="UsuNombre" />
+          <ScalarProperty Name="UsuPass" ColumnName="UsuPass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
